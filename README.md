@@ -7,7 +7,7 @@ Este projeto é uma aplicação simples que valida o formato de um CEP (Código 
 
 ## Estrutura de Arquivos
 
-```bash
+```javascript
 pipeline-ci-cd-validador-cep/
 ├── .github/
 │   └── workflows/
@@ -64,6 +64,16 @@ const getCepInfo = async (cep) => {
 
 module.exports = { validateCepFormat, getCepInfo };
 ```
+### 5. Crie o arquivo `.gitignore`
+
+Adicione um arquivo `.gitignore` na raiz do projeto com o seguinte conteúdo:
+
+```bash
+node_modules/
+package-lock.json
+```
+
+O arquivo `.gitignore` serve para especificar quais arquivos ou diretórios o Git deve ignorar. No nosso caso, estamos ignorando a pasta `node_modules/` e o arquivo `package-lock.json`, pois eles são gerados automaticamente pelo npm e não precisam ser versionados.
 
 ## Escrita dos Testes Automatizados
 
