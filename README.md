@@ -17,6 +17,7 @@ pipeline-ci-cd-validador-cep/
 ├── tests/
 │   ├── integration.test.js
 │   └── unit.test.js
+├── .gitignore
 ├── package.json
 └── README.md
 ```
