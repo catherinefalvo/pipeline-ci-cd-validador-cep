@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const validateCepFormat = (cep) => {
-  const regex = /^[0-9]{5}-[0-9]{3}$/;
+  const regex = /^[0-9]{8}$/;
   return regex.test(cep);
 };
 
